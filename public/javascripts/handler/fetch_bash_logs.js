@@ -1,4 +1,4 @@
-var URI_Bash = 'http://localhost:3000/logs/bash/timestamp/desc';
+var URI_Bash = 'http://0.0.0.0:3000/logs/bash/timestamp/desc';
 
 function fetchConversation(){
     // var score = severity(e.SUMMARIZE_RESULT.score);
