@@ -1,4 +1,4 @@
-var URI_Bash =  document.location.origin+':3000/logs/bash/timestamp/desc';
+var URI_Bash =  document.location.origin+'/logs/bash/timestamp/desc';
 
 function fetchConversation(){
     // var score = severity(e.SUMMARIZE_RESULT.score);

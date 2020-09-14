@@ -1,4 +1,4 @@
-var URI = document.location.origin':3000/logs/cvss/timestamp/desc';
+var URI = document.location.origin+'/logs/cvss/timestamp/desc';
 
 function fetchConversation(){
     var score = severity(e.SUMMARIZE_RESULT.score);
