@@ -1,4 +1,4 @@
-var URI = 'http://0.0.0.0:3000/logs/cvss/timestamp/desc';
+var URI = 'http://103.253.146.161:3000/logs/cvss/timestamp/desc';
 
 function fetchConversation(){
     var score = severity(e.SUMMARIZE_RESULT.score);
