@@ -47,13 +47,15 @@ function appendData(e) {
     var score = severity(e.SUMMARIZE_RESULT.score);
 
     var tr  = "<tr></tr>";
-    var td1 = $("<td></td>").text(e.timestamp);   // Create with jQuery
-    var td2 = $("<td></td>").text(e.vul_tag);   // Create with jQuery
-    var td3 = $("<td></td>").text(e.SUMMARIZE_RESULT.vector);   // Create with jQuery
-    var td4 = $("<td></td>").append(score);   // Create with jQuery
-    var td5 = $("<td></td").text(e.payload)
+    var time = $("<td></td>").text(new Date(e.timestamp));   // Create with jQuery
+    var vuln = $("<td></td>").text(e.vul_tag);   // Create with jQuery
+    var ip = $("<td></td>").text(e.ip);
+    var url = $("<td></td>").text(e.url);
+    var payload = $("<td></td>").text(e.payload);
+    var summ = $("<td></td>").text(e.SUMMARIZE_RESULT.vector);   // Create with jQuery
+    var score = $("<td></td>").append(score);   // Create with jQuery
     $("#table-cvss tbody").append(tr);      // Append the new elements 
-    $("#table-cvss tbody tr:last-child").append(td1,td2,td3,td4,td5);
+    $("#table-cvss tbody tr:last-child").append(time, vuln, ip, url, payload, summ, score);
 }
 
 function emptyData(){
