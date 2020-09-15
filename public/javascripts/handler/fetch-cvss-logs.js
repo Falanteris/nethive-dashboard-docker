@@ -51,8 +51,9 @@ function appendData(e) {
     var td2 = $("<td></td>").text(e.vul_tag);   // Create with jQuery
     var td3 = $("<td></td>").text(e.SUMMARIZE_RESULT.vector);   // Create with jQuery
     var td4 = $("<td></td>").append(score);   // Create with jQuery
+    var td5 = $("<td></td").text(e.payload)
     $("#table-cvss tbody").append(tr);      // Append the new elements 
-    $("#table-cvss tbody tr:last-child").append(td1,td2,td3,td4);
+    $("#table-cvss tbody tr:last-child").append(td1,td2,td3,td4,td5);
 }
 
 function emptyData(){
